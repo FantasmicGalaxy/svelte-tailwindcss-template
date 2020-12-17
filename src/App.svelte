@@ -1,14 +1,8 @@
-<script>
-	import Tailwindcss from './Tailwindcss.svelte';
+<script lang="ts">
+	import Tailwindcss from "./Tailwindcss.svelte";
 
-	export let name;
+	export let name: string;
 </script>
-
-<Tailwindcss />
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
 
 <style>
 	main {
@@ -31,3 +25,13 @@
 		}
 	}
 </style>
+
+<Tailwindcss />
+<main>
+	<h1>Hello {name}!</h1>
+	<p>
+		Visit the
+		<a href="https://svelte.dev/tutorial">Svelte tutorial</a>
+		to learn how to build Svelte apps.
+	</p>
+</main>
